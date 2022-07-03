@@ -12,7 +12,7 @@ onMounted(async () => {
 
   pokemon.value = res
   console.log(pokemon.value.types)
-})
+});
 
 </script>
 

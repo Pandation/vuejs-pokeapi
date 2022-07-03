@@ -5,21 +5,25 @@ function getLinearGradientForTypes(types) {
     const colorArray = {
         poison: 'rgb(179, 1, 179)',
         fire: 'rgb(255, 106, 52)',
-        dragon: '',
-        ghost: '',
-        steel: '',
-        rock: '',
-        ground: '',
-        electric: '',
+        dragon: 'beige',
+        ghost: 'rgb(43, 0, 43)',
+        psychic: 'violet',
+        steel: 'gray',
+        rock: 'darkgray',
+        ground: 'maroon',
+        electric: 'yellow',
         water: 'rgb(86, 119, 230)',
         grass: 'rgb(0, 165, 0)',
         flying: 'lightblue',
         bug: 'lightgreen',
         normal: 'lightgray',
+        fairy: 'pink',
+        ice: 'rgb(200, 241, 255)'
     }
 
     return 'linear-gradient(to bottom right,' + colorArray[types[0]] + ', ' + (colorArray[types[1]] || 'white') + ')';
 }
+
 </script>
 
 <template>
@@ -125,5 +129,29 @@ div.normal {
 div.electric {
     color: black;
     background-color: yellow;
+}
+div.psychic {
+    color: black;
+    background-color: violet;
+}
+div.ground {
+    color: black;
+    background-color: maroon;
+}
+div.rock {
+    color: black;
+    background-color: darkgray;
+}
+div.steel {
+    color: white;
+    background-color: gray;
+}
+div.ice {
+    color: black;
+    background-color: rgb(200, 241, 255);
+}
+div.ghost {
+    color: white;
+    background-color: rgb(43, 0, 43);
 }
 </style>

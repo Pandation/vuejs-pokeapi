@@ -10,7 +10,7 @@ let pokemons = reactive({
 })
 
 onMounted(async () => {
-  const data = await fetch("https://pokeapi.co/api/v2/pokemon");
+  const data = await fetch("https://pokeapi.co/api/v2/pokemon?offset=80");
   const res = await data.json();
 
   const response = await Promise.all(res.results.map(pokemon => fetch("https://pokeapi.co/api/v2/pokemon/" + pokemon.name).then(res => res.json())))
