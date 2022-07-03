@@ -1,7 +1,7 @@
 <template>
     <div>
         <span>
-            {{props.total}}
+            {{props.total}} 
         </span>
     </div>
 </template>
